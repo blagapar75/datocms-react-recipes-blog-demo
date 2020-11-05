@@ -5,6 +5,7 @@ import Header from "./Header";
 import Home from "./Home";
 import About from "./About";
 import Recipe from "./Recipe";
+import job from "./job";
 
 const App = () => (
   <Router>
@@ -13,6 +14,7 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route path="/recipes/:slug" component={Recipe} />
       <Route path="/about" component={About} />
+      <Route path="/job" component={job} />
     </main>
   </Router>
 );
